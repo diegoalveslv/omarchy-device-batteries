@@ -20,7 +20,7 @@ After this directory is committed to a Git repository, install it through the
 supported Omarchy plugin command:
 
 ```bash
-omarchy plugin add <git-url> --enable
+omarchy plugin add https://github.com/diegoalveslv/omarchy-device-batteries.git --enable
 omarchy bar move dsilva.device-batteries --section right --before omarchy.power
 ```
 
@@ -28,12 +28,17 @@ The Omarchy-managed checkout is placed under `~/.config/omarchy/plugins/` while
 this repository can remain in your workspace. Do not edit
 `/usr/share/omarchy/`.
 
+## Remove
+
+```bash
+omarchy plugin remove dsilva.device-batteries
+```
+
 ## Usage
 
 The widget is hidden when no external device reports a battery. Otherwise, the
-bar shows the lowest connected-device charge; a charging glyph appears when any
-device is charging. Click it to open a per-device list with charge state and
-data source.
+bar shows a battery icon and the lowest connected-device charge. Click it to
+open a per-device list with charge state.
 
 It can also be toggled through Omarchy Shell IPC:
 
@@ -58,4 +63,4 @@ plugin manifest, and lint QML when `qmllint` is installed.
 
 ## License
 
-MIT
+[Apache License 2.0](LICENSE)
