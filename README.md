@@ -23,7 +23,7 @@ supported Omarchy plugin command:
 
 ```bash
 omarchy plugin add https://github.com/diegoalveslv/omarchy-device-batteries.git --enable
-omarchy bar move dsilva.device-batteries --section right --before omarchy.power
+omarchy bar move dlv.device-batteries --section right --before omarchy.power
 ```
 
 The Omarchy-managed checkout is placed under `~/.config/omarchy/plugins/` while
@@ -33,7 +33,7 @@ this repository can remain in your workspace. Do not edit
 ## Remove
 
 ```bash
-omarchy plugin remove dsilva.device-batteries
+omarchy plugin remove dlv.device-batteries
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ open a per-device list with charge state.
 It can also be toggled through Omarchy Shell IPC:
 
 ```bash
-omarchy-shell shell toggle dsilva.device-batteries '{}'
+omarchy-shell shell toggle dlv.device-batteries '{}'
 ```
 
 ## Development checks

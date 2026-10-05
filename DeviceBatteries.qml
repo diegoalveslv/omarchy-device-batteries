@@ -10,8 +10,8 @@ import "DeviceModel.js" as DeviceModel
 
 Panel {
   id: root
-  moduleName: "dsilva.device-batteries"
-  ipcTarget: "dsilva.device-batteries"
+  moduleName: "dlv.device-batteries"
+  ipcTarget: "dlv.device-batteries"
   manageIpc: false
 
   readonly property var upowerDevices: UPower.devices ? UPower.devices.values : []
@@ -49,7 +49,7 @@ Panel {
   }
 
   IpcHandler {
-    target: "dsilva.device-batteries"
+    target: "dlv.device-batteries"
 
     function open() { root.open() }
     function close() { root.close() }
