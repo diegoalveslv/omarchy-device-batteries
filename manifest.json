@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "dsilva.device-batteries",
+  "name": "Device Batteries",
+  "version": "0.1.0",
+  "author": "Diego Alves da Silva",
+  "description": "Shows batteries reported by connected Bluetooth and wired devices.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "DeviceBatteries.qml"
+  },
+  "barWidget": {
+    "displayName": "Device Batteries",
+    "description": "External device battery levels from UPower and Bluetooth",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
