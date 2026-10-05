@@ -177,7 +177,7 @@ Panel {
 
                   Text {
                     width: parent.width
-                    text: deviceRow.modelData.state + " · " + deviceRow.modelData.source
+                    text: deviceRow.modelData.state
                     textFormat: Text.PlainText
                     color: root.barForeground
                     opacity: 0.62
@@ -217,16 +217,6 @@ Panel {
           }
         }
 
-        Text {
-          width: parent.width
-          text: "Battery levels are reported by device drivers. Devices that do not expose charge data cannot be listed."
-          textFormat: Text.PlainText
-          color: root.barForeground
-          opacity: 0.52
-          font.family: Style.font.family
-          font.pixelSize: Style.font.caption
-          wrapMode: Text.WordWrap
-        }
       }
     }
   }
