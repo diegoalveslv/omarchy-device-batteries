@@ -3,6 +3,8 @@
 An Omarchy Shell bar widget that lists the battery level of connected external
 devices, including Bluetooth devices and devices connected by cable.
 
+![Device Batteries panel](preview.png)
+
 ## How it works
 
 The widget reads `UPower.devices` first. UPower is the Linux service that
