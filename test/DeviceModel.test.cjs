@@ -94,12 +94,12 @@ test("uses Bluetooth battery data only when UPower has not already identified th
   assert.equal(rows[0].source, "Bluetooth")
 })
 
-test("summarises the lowest charge level and charging state", () => {
+test("summarises only the lowest charge level", () => {
   const rows = [
     { percentage: 75, charging: true },
     { percentage: 42, charging: false }
   ]
 
   assert.equal(model.lowestPercentage(rows), 42)
-  assert.equal(model.summary(rows), "2 · 42% 󰚥")
+  assert.equal(model.summary(rows), "42%")
 })

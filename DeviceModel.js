@@ -148,8 +148,7 @@ function summary(rows) {
   var lowest = lowestPercentage(values)
   if (lowest < 0) return ""
 
-  var prefix = values.length > 1 ? String(values.length) + " · " : ""
-  return prefix + String(lowest) + "%" + (anyCharging(values) ? " 󰚥" : "")
+  return String(lowest) + "%"
 }
 
 if (typeof module !== "undefined") {
